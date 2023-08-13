@@ -1,0 +1,256 @@
+html {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
+body > div {
+  min-height: 100px;
+  padding: 0 20%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.warp {
+  padding: 30px 150px;
+  background-size: cover;
+}
+.block1 {
+  background-image: url("../img/bgc.png");
+  background-size: cover;
+  color: white;
+}
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+}
+.top-header-mobile {
+  display: none;
+}
+
+.top-header .logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-header ul {
+  text-align: center;
+}
+.top-header ul li {
+  display: inline-block;
+}
+.top-header ul li a {
+  padding: 10px 20px;
+  color: white;
+}
+.top-header ul li a:visited {
+  color: white;
+}
+
+.top-header .search ul {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  justify-content: end;
+}
+.top-header .search ul a {
+  display: block;
+}
+.top-header .search img {
+  display: inline-block;
+}
+.top-header .menu {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px 50px 20px;
+}
+.right-bottom-header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.right-bottom-header > div {
+  margin: 10px;
+  padding: 15px 15px 10px;
+  background-color: blue;
+}
+.right-bottom-header > div:nth-child(1) {
+  background-color: blue;
+}
+.right-bottom-header > div:nth-child(2) {
+  background-color: lightblue;
+}
+.right-bottom-header > div:nth-child(3) {
+  background-color: #ffc41e;
+}
+.right-bottom-header > div:nth-child(4) {
+  background-color: coral;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+a {
+  font-size: 14px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+@media screen and (max-width: 1000px) {
+  body .warp {
+    padding: 5px 10px;
+  }
+  body .bottom-header {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px 5px 2px;
+  }
+  body .block2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  body .block4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.block2 {
+  background-color: #2378fc;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+.block2 ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.block2 li {
+  display: block;
+}
+.block2 li a {
+  display: block;
+  padding: 5px 0;
+}
+.block2 a {
+  color: white;
+}
+
+.block3 {
+  background-color: #ffc41e;
+}
+.block3 .block-header {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.block-header {
+  padding: 20px 0 40px;
+}
+.block-header a {
+  color: black;
+}
+.block-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.block-header h5 {
+  text-align: right;
+}
+
+.events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.events a {
+  color: black;
+  display: block;
+  padding: 10px 25px 50px;
+}
+.events img {
+  width: 100%;
+}
+.events h5 {
+  font-size: 60%;
+}
+.events h4 {
+  margin: 0 0 15px;
+  color: #f6404f;
+}
+.events p {
+  margin: 0;
+}
+.block4 {
+  background-color: #faf3e3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.teasers {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: start;
+}
+.teasers img {
+  margin: 10px 0;
+}
+.news .block-header {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+.block-news a {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  color: black;
+}
+.block-news a div {
+  padding: 10px 0;
+}
+.block-news a div:nth-child(2) {
+  padding: 30px;
+  box-sizing: content-box;
+}
+.block-news span {
+  color: #f6404f;
+}
+.block5 {
+  background-color: deepskyblue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  justify-items: start;
+  color: white;
+  padding: 0 20%;
+}
+.block5 a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+.social-icons ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.social-icons a {
+  font-size: 150%;
+  color: white;
+}
